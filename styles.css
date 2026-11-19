@@ -31,12 +31,13 @@ footer{max-width:780px;width:calc(100% - 32px);margin:0 auto;padding:0 0 28px;co
 @media(max-width:580px){.topbar{align-items:flex-start;flex-direction:column}.hero{padding:36px 16px 40px}.grid{grid-template-columns:1fr}.card{padding:19px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-/* Högupplöst beskuret originalfoto utan reklamskrift. */
-body{position:relative;isolation:isolate}
-body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(180deg,rgba(244,246,247,.22) 0%,rgba(244,246,247,.36) 40%,rgba(244,246,247,.66) 82%,rgba(244,246,247,.78) 100%),url("./ssrs-bakgrund.webp");background-size:cover;background-position:center 53%;background-repeat:no-repeat;opacity:.86}
+/* Sjöräddningsfoto. Bildlagret ligger över sidans bakgrund, under allt innehåll. */
+body{position:relative;isolation:isolate;background:#e9eef0}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(235,242,244,.10) 0%,rgba(235,242,244,.38) 66%,rgba(235,242,244,.63) 100%),url("./ssrs-bakgrund.webp?v=2") center 54%/cover no-repeat;opacity:1}
 header,.hero,main,footer{position:relative;z-index:1}
-.card{background:rgba(255,255,255,.94)}
-@media(max-width:580px){body::before{background-position:54% center}}
+.hero{background:linear-gradient(90deg,rgba(18,42,58,.90),rgba(18,42,58,.60)),url("./ssrs-bakgrund.webp?v=2") center 55%/cover no-repeat}
+.card{background:rgba(255,255,255,.93);backdrop-filter:blur(3px)}
+@media(max-width:580px){body::before{background-position:54% center}.hero{background-position:54% center}}
 /* SSRS logo in header */
 .brand-logo{display:block;width:clamp(160px,23vw,230px);height:auto;object-fit:contain}
 @media(max-width:580px){.brand-logo{width:190px}}
