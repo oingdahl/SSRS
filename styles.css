@@ -49,3 +49,9 @@ header,.hero,main{position:relative;z-index:1}
 .prompt-text{margin:0;padding:13px 15px;white-space:normal;overflow-wrap:anywhere;background:white;border-left:4px solid var(--red);border-radius:6px;font-size:15px;line-height:1.65;color:var(--navy);user-select:text}
 .copy-prompt{margin-top:12px}
 .copy-status{min-height:1.4em;margin:9px 0 0}
+
+/* Enhetsspecifika tips på detaljsidan */
+.device-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.device-tip{background:rgba(245,247,248,.95);border:1px solid var(--line);border-radius:9px;padding:15px}
+.device-tip p{color:var(--muted);font-size:14px;margin:5px 0 0}
+@media(max-width:580px){.device-grid{grid-template-columns:1fr}}
