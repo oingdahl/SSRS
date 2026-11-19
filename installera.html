@@ -1,42 +1,28 @@
 <!doctype html>
 <html lang="sv">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#123047"><title>Installera Båtmekaniker</title>
-<style>
-*{box-sizing:border-box}body{margin:0;background:#f4f7f8;color:#183041;font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
-header{background:#123047;color:white;padding:27px 20px 34px}header a{color:#d6e6eb;text-decoration:none}h1{font-size:clamp(30px,7vw,44px);line-height:1.1;margin:22px auto 0;max-width:680px}
-main{width:min(680px,calc(100% - 32px));margin:22px auto 48px}.card{background:#fff;border:1px solid #dce5e9;border-radius:16px;padding:21px;margin:14px 0}
-h2{font-size:21px;color:#123047;margin:0 0 10px}h3{font-size:16px;margin:18px 0 5px;color:#183041}p,li{color:#596b76}p{margin:8px 0}ol{padding-left:22px;margin:12px 0}li{padding:5px 0}
-.tag{display:inline-block;background:#e6f1f3;color:#15566b;padding:4px 9px;border-radius:20px;font-size:12px;font-weight:800;margin-bottom:10px}
-.warning{background:#fff7e8;border-color:#eed9ad}.button{display:block;background:#12617a;color:white;text-decoration:none;text-align:center;font-weight:750;padding:14px 17px;border-radius:11px;margin-top:14px}.code{background:#edf2f4;border-radius:9px;padding:12px;overflow-wrap:anywhere;font:13px/1.5 ui-monospace,monospace;white-space:pre-wrap;color:#223a48}.back{display:inline-block;margin:10px 0 0;color:#12617a;font-weight:700;text-decoration:none}
-</style></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#d71920">
+<meta name="description" content="Information om installation av SSRS Handbok 2025 och RAKEL.">
+<title>Installation – SSRS Handbok 2025 och RAKEL</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
 <body>
-<header><a href="index.html">← Båtmekaniker</a><h1>Installera Båtmekaniker</h1></header>
+<header><div class="topbar"><a class="brand" href="./index.html"><span class="mark" aria-hidden="true">✚</span><span>SSRS · HANDBOK & RAKEL</span></a><nav aria-label="Huvudmeny"><a href="./index.html">Startsida</a><a href="./installera.html" aria-current="page">Installation</a></nav></div></header>
+<section class="hero"><div class="hero-inner"><p class="eyebrow">Kunskapsstöd för sjöräddning</p><h1>Installation och frågor</h1><p>SSRS Handbok 2025 och RAKEL – aktuell status och nästa steg.</p></div></section>
 <main>
-<section class="card warning"><span class="tag">Viktigt</span><h2>En ZIP-fil installerar inte pluginen med ett klick</h2><p>ChatGPT behöver antingen att pluginen publiceras i den publika katalogen, eller att den läggs till som en lokal plugin i datorappen.</p></section>
-<section class="card"><span class="tag">Enklast för vänner</span><h2>Publik installation via ChatGPT</h2><ol><li>Ägaren skickar ZIP-filen till OpenAI via <a href="https://developers.openai.com/plugins/deploy/submission" target="_blank" rel="noopener">pluginpubliceringen</a>.</li><li>OpenAI granskar paketet. Ägaren publicerar det när det godkänts.</li><li>Därefter öppnar varje vän ChatGPT → Plugins, söker efter <strong>Båtmekaniker</strong> och väljer <strong>Installera</strong>.</li></ol><p>Det här är vägen till en enkel installation utan att varje vän behöver hantera filer. Pluginen är ännu privat och finns inte i den publika katalogen.</p></section>
-<section class="card"><span class="tag">Testa från ZIP på dator</span><h2>Manuell installation i ChatGPT:s datorapp</h2><p>Den här vägen är mer teknisk och gäller datorappen – inte en vanlig mobilinstallation.</p><ol><li>Ladda ner ZIP-filen och packa upp den.</li><li>Lägg pluginmappen i <code>~/.codex/plugins/batmekaniker</code>.</li><li>Skapa mappen <code>~/.agents/plugins</code> om den saknas.</li><li>Skapa filen <code>~/.agents/plugins/marketplace.json</code> med innehållet nedan.</li><li>Starta om ChatGPT:s datorapp. Öppna Plugins, välj din personliga marknadsplats och installera Båtmekaniker.</li></ol>
-<div class="code">{
-  "name": "batmekaniker",
-  "interface": { "displayName": "Båtmekaniker" },
-  "plugins": [
-    {
-      "name": "gpt-e39ea0bb1fff06372c4858665acff658",
-      "source": {
-        "source": "local",
-        "path": "../../.codex/plugins/batmekaniker"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Other"
-    }
-  ]
-}</div>
-<a class="button" href="https://developers.openai.com/plugins/build/plugins" target="_blank" rel="noopener">OpenAI:s installationsguide ↗</a>
-</section>
-<section class="card"><h2>Så fungerar Båtmekaniker</h2><p>Välj rätt motor i frågan. Båtmekaniker ska skilja mellan Kawasaki Ultra 300LX 2013 och Yamaha F115 2006, använda respektive manual och ange sidnummer.</p></section>
-<a class="back" href="index.html">← Till startsidan</a>
-</main></body></html>
+<section class="card"><h2>Installationsstatus</h2>
+<div class="notice"><strong>Pluginen är inte redo att hämtas här.</strong> Vi väntar på den nya ZIP-filen och behöver därefter kontrollera innehåll, instruktioner och faktisk installationsmetod.</div>
+<p>En ZIP-fil är inte samma sak som en installerad plugin. Fildelning till ChatGPT kan vara begränsad beroende på app, webbläsare och kontotyp.</p></section>
+<section class="card"><h2>När ZIP-filen har levererats</h2><ol class="steps">
+<li>Kontrollera det verkliga filnamnet och paketets struktur.</li>
+<li>Verifiera hur pluginen kan installeras privat i ChatGPT.</li>
+<li>Aktivera nedladdning och eventuell delning när filen har lagts upp.</li>
+<li>Testa installationsflödet på relevanta enheter innan instruktionerna fastställs.</li>
+</ol></section>
+<section class="card"><h2>Vad kan jag fråga om?</h2><p>Pluginen är avsedd för frågor mot <strong>SSRS Handbok 2025</strong> och frågor om <strong>RAKEL</strong>. Vilka källor och funktioner som ingår behöver bekräftas efter granskning av paketet.</p>
+<p>Kontrollera alltid säkerhetskritiska svar mot gällande föreskrifter, rutiner och behöriga källor. AI-stödet ersätter inte operativa instruktioner.</p></section>
+<a class="button secondary" href="./index.html">Tillbaka till startsidan</a>
+</main><footer>Privat distribution planeras. Ingen offentlig pluginpublicering sker via denna webbplats.</footer>
+</body></html>
