@@ -1,76 +1,44 @@
 <!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1d2a">
-  <meta name="description" content="Båtmekaniker – en digital verkstadshjälp för Kawasaki Ultra 300LX 2013 och Yamaha F115 2006.">
-  <title>Båtmekaniker – hjälp med din båtmotor</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10283f">
+<title>Båtmekaniker</title>
+<style>
+:root{--navy:#10283f;--blue:#176b87;--ink:#172b3a;--muted:#637480;--bg:#f4f7f8;--line:#dce5e9}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:var(--navy);color:white;padding:48px 20px 62px;text-align:center}
+.anchor{font-size:32px}h1{font-size:clamp(2.4rem,9vw,4rem);line-height:1.02;margin:10px 0}header p{margin:12px auto 0;max-width:440px;color:#d8e5eb;font-size:1.05rem}
+main{width:min(680px,calc(100% - 32px));margin:-25px auto 52px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:14px;box-shadow:0 7px 24px #10283f08}
+h2{font-size:1.2rem;color:var(--navy);margin:0 0 14px}
+.models{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.model{background:#f3f7f8;border-radius:13px;padding:17px 14px}
+.model .ico{font-size:24px}.model strong{display:block;margin-top:7px;color:var(--navy);font-size:1rem}.model small{color:var(--muted)}
+.primary{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;border-radius:13px;background:var(--blue);color:white;text-decoration:none;font-weight:750;font-size:1.05rem;margin-top:16px}
+.secondary{display:block;text-align:center;color:var(--blue);font-weight:700;text-decoration:none;margin-top:14px}
+.steps{display:grid;gap:13px}.step{display:flex;gap:13px;align-items:flex-start}.num{flex:0 0 31px;height:31px;border-radius:50%;background:#e5f1f4;color:var(--blue);display:grid;place-items:center;font-weight:800}.step strong{display:block;color:var(--navy)}.step p{margin:2px 0 0;color:var(--muted);font-size:.93rem}
+.note{background:#fff8e9;border:1px solid #f0dfb8;border-radius:13px;padding:14px;color:#67501f;font-size:.9rem}
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:0 18px 30px}
+@media(max-width:480px){header{padding:39px 18px 53px}.panel{padding:18px}.models{grid-template-columns:1fr}.model{display:flex;align-items:center;gap:12px}.model .ico{font-size:28px}.model strong{margin:0}.model small{display:block}}
+</style>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#" aria-label="Båtmekaniker startsida"><span class="brand-mark">⚓</span><span>BÅTMEKANIKER</span></a>
-    <span class="top-note">DIGITAL MOTORHJÄLP</span>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse"></span> FÖR DIG SOM VILL SKRUVA SMARTARE</p>
-        <h1>Din båtmotor.<br><em>Färre frågetecken.</em></h1>
-        <p class="intro">En tydlig digital hjälpreda för dig som vill förstå, felsöka och serva din motor med stöd av tillverkarens manual.</p>
-        <a class="button button-primary" href="#kom-igang">Så kommer du igång <span aria-hidden="true">↓</span></a>
-        <p class="micro">Fungerar på mobil, surfplatta och dator.</p>
-      </div>
-      <div class="hero-art" role="img" aria-label="Illustration av en båt på öppet vatten">
-        <div class="sun"></div><div class="water water-one"></div><div class="water water-two"></div>
-        <div class="boat"><div class="boat-cabin"></div><div class="boat-hull"></div><div class="boat-motor"></div></div>
-        <div class="art-label"><span>⚓</span> KUNSKAP MED MANUALEN SOM GRUND</div>
-      </div>
-    </section>
-
-    <section class="engines" aria-labelledby="motorer-title">
-      <div class="section-heading">
-        <p class="eyebrow">TVÅ MOTORER</p>
-        <h2 id="motorer-title">Specialiserad på rätt modell</h2>
-      </div>
-      <div class="engine-grid">
-        <article class="engine-card">
-          <div class="engine-icon">JET</div>
-          <div><h3>Kawasaki Ultra 300LX</h3><p>Jetski · årsmodell 2013</p></div>
-        </article>
-        <article class="engine-card">
-          <div class="engine-icon">115</div>
-          <div><h3>Yamaha F115</h3><p ut="true">Utombordare · årsmodell 2006</p></div>
-        </article>
-      </div>
-      <p class="small-note">Frågor hålls isär per motormodell. Svaren ska förankras i respektive instruktionsbok.</p>
-    </section>
-
-    <section class="how" id="kom-igang">
-      <div class="section-heading">
-        <p class="eyebrow">ENKELT ATT KOMMA IGÅNG</p>
-        <h2>Tre enkla steg</h2>
-        <p class="section-lead">Vi vill göra installationen så enkel som möjligt – även om du använder mobilen.</p>
-      </div>
-      <ol class="steps">
-        <li><span class="step-number">1</span><div><h3>Öppna ChatGPT</h3><p>Logga in på det ChatGPT-konto där du vill använda Båtmekaniker.</p></div></li>
-        <li><span class="step-number">2</span><div><h3>Lägg till Båtmekaniker</h3><p>En officiell installationsväg och direktlänk publiceras här så snart den är tillgänglig för andra användare.</p></div></li>
-        <li><span class="step-number">3</span><div><h3>Välj rätt motor</h3><p>Ange om frågan gäller Kawasaki Ultra 300LX 2013 eller Yamaha F115 2006.</p></div></li>
-      </ol>
-      <div class="notice">
-        <span class="notice-icon">i</span>
-        <div><strong>Installationen är inte öppen ännu</strong><p>Båtmekaniker finns för närvarande som en privat plugin. En vanlig webblänk kan inte installera den i någon annans ChatGPT-konto. Vi lägger till installationsknappen när distributionen via OpenAI är klar.</p></div>
-      </div>
-    </section>
-
-    <section class="bottom-cta">
-      <div><p class="eyebrow">BÅTMEKANIKER</p><h2>Tryggare svar börjar med rätt manual.</h2><p>Den här sidan uppdateras när installationsmöjligheten blir tillgänglig.</p></div>
-      <a class="button button-secondary" href="https://chatgpt.com/" target="_blank" rel="noopener">Öppna ChatGPT <span aria-hidden="true">↗</span></a>
-    </section>
-  </main>
-  <footer><span>© <span id="year"></span> Båtmekaniker</span><span>Oberoende hjälpverktyg – inte en officiell Kawasaki- eller Yamaha-tjänst.</span></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<header><div class="anchor" aria-hidden="true">⚓</div><h1>Båtmekaniker</h1><p>Din digitala hjälp med motorfrågor – med instruktionsböckerna som grund.</p></header>
+<main>
+<section class="panel"><h2>Välj din motor</h2><div class="models">
+<div class="model"><span class="ico" aria-hidden="true">🌊</span><div><strong>Kawasaki Ultra 300LX</strong><small>Jetski · 2013</small></div></div>
+<div class="model"><span class="ico" aria-hidden="true">🚤</span><div><strong>Yamaha F115</strong><small>Utombordare · 2006</small></div></div>
+</div></section>
+<section class="panel"><h2>Installera Båtmekaniker</h2>
+<div class="note"><strong>Viktigt:</strong> Pluginen kan inte installeras automatiskt genom att bara öppna en webbsida. Installationen beror på vilken ChatGPT-miljö du använder.</div>
+<a class="primary" href="installera.html">Visa hur du installerar <span aria-hidden="true">→</span></a>
+</section>
+<section class="panel"><h2>Så använder du den</h2><div class="steps">
+<div class="step"><span class="num">1</span><div><strong>Öppna Båtmekaniker i ChatGPT</strong><p>Starta en ny konversation med pluginen.</p></div></div>
+<div class="step"><span class="num">2</span><div><strong>Skriv vad du undrar</strong><p>Beskriv motorn och problemet.</p></div></div>
+<div class="step"><span class="num">3</span><div><strong>Få svar med manualstöd</strong><p>Be om tydliga instruktioner och sidhänvisningar.</p></div></div>
+</div></section>
+</main>
+<footer>© Båtmekaniker · Oberoende hjälpreda, inte en officiell Kawasaki- eller Yamaha-tjänst.</footer>
+</body></html>
