@@ -23,6 +23,12 @@
 <p class="status" id="shareStatus" aria-live="polite">På kompatibla mobiler öppnas delningsmenyn. ChatGPT kanske inte visas som ett alternativ och filen installeras inte automatiskt.</p></section>
 <section class="card"><h2>2. Installera privat i ChatGPT</h2>
 <a class="button" href="https://chatgpt.com/?q=Jag%20vill%20installera%20SSRS%20Handbok%202025%20och%20RAKEL%20som%20en%20privat%20plugin.%20Jag%20bifogar%20ZIP-filen.%20Granska%20paketet%20och%20hj%C3%A4lp%20mig%20med%20de%20installationssteg%20som%20faktiskt%20st%C3%B6ds.%20Publicera%20den%20inte." target="_blank" rel="noopener noreferrer">Öppna ChatGPT med instruktionen</a>
+<div class="prompt-box" aria-label="Installationsinstruktion att kopiera">
+<p class="prompt-label"><strong>Installationsprompt – kopiera vid behov:</strong></p>
+<blockquote class="prompt-text" id="installationPrompt">“Jag vill installera SSRS Handbok 2025 och RAKEL som en privat plugin. Jag bifogar ZIP-filen. Granska paketet och hjälp mig med de installationssteg som faktiskt stöds. Publicera den inte.”</blockquote>
+<button class="button secondary copy-prompt" type="button" data-copy-prompt aria-label="Kopiera installationsprompten">Kopiera instruktionen</button>
+<p class="status copy-status" aria-live="polite"></p>
+</div>
 <ol class="steps">
 <li><strong>Bifoga ZIP-filen.</strong> Om den inte redan följde med via delningsmenyn, bifoga den i chatten.</li>
 <li><strong>Skicka installationsinstruktionen.</strong> Be om hjälp med privat installation utan offentlig publicering.</li>
@@ -67,4 +73,31 @@ shareButton.addEventListener("click", async () => {
 });
 </script>
 <footer>SSRS Handbok 2025 och RAKEL · Fristående informationssida med färger inspirerade av Sjöräddningssällskapets webbplats. Ingen officiell anknytning eller godkännande är verifierat.</footer>
+<script>
+document.querySelectorAll("[data-copy-prompt]").forEach(button => {
+  button.addEventListener("click", async () => {
+    const prompt = "Jag vill installera SSRS Handbok 2025 och RAKEL som en privat plugin. Jag bifogar ZIP-filen. Granska paketet och hjälp mig med de installationssteg som faktiskt stöds. Publicera den inte.";
+    const status = button.parentElement.querySelector(".copy-status");
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(prompt);
+      } else {
+        const field = document.createElement("textarea");
+        field.value = prompt;
+        field.style.position = "fixed";
+        field.style.opacity = "0";
+        document.body.appendChild(field);
+        field.focus();
+        field.select();
+        const copied = document.execCommand("copy");
+        field.remove();
+        if (!copied) throw new Error("Kopiering stöds inte");
+      }
+      status.textContent = "Instruktionen är kopierad. Klistra in den i ChatGPT.";
+    } catch (error) {
+      status.textContent = "Automatisk kopiering fungerade inte. Markera och kopiera texten ovan manuellt.";
+    }
+  });
+});
+</script>
 </body></html>
