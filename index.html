@@ -1,81 +1,31 @@
 <!doctype html>
 <html lang="sv">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#123047">
-<title>Båtmekaniker – privat installation</title>
-<style>
-*{box-sizing:border-box}body{margin:0;background:#f4f7f8;color:#193141;font:17px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
-header{background:#123047;color:#fff;text-align:center;padding:42px 20px 46px}header .anchor{font-size:34px}h1{font-size:clamp(38px,8vw,54px);line-height:1.05;margin:7px 0}header p{margin:12px auto 0;max-width:480px;color:#d6e4e9}
-main{max-width:620px;width:calc(100% - 32px);margin:24px auto 48px}.card{background:#fff;border:1px solid #dce5e9;border-radius:18px;padding:22px;margin:15px 0}
-h2{font-size:22px;color:#123047;margin:0 0 13px}.models{display:grid;grid-template-columns:1fr 1fr;gap:10px}.model{background:#edf3f5;border-radius:12px;padding:14px}.model b{display:block;font-size:15px}.model span{font-size:14px;color:#60717b}
-.action{display:flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;border:0;width:100%;background:#12617a;color:white;border-radius:13px;padding:16px 18px;font-weight:800;font-size:17px;margin-top:12px;cursor:pointer;font-family:inherit}.action.secondary{background:#e6f0f3;color:#164d60;border:1px solid #c8dce2}.action small{display:block;font-size:12px;font-weight:500;opacity:.9}
-.steps{list-style:none;padding:0;margin:0;counter-reset:step}.steps li{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid #e8edef;counter-increment:step}.steps li:last-child{border:0}.steps li:before{content:counter(step);display:grid;place-items:center;width:29px;height:29px;flex:none;border-radius:50%;background:#dceef1;color:#15586c;font-weight:800}.steps b{display:block}.steps small{display:block;color:#61717b;font-size:14px}
-.info{background:#eef5f7;border:1px solid #d5e5e9;color:#254b59;border-radius:12px;padding:14px;font-size:14px}.note{font-size:13px;color:#71808a;text-align:center}
-@media(max-width:480px){.models{grid-template-columns:1fr}.card{padding:18px}header{padding:36px 18px 40px}}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#d71920">
+<meta name="description" content="SSRS Handbok 2025 och RAKEL – information om privat distribution av en ChatGPT-plugin.">
+<title>SSRS Handbok 2025 och RAKEL</title>
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<header><div class="anchor" aria-hidden="true">⚓</div><h1>Båtmekaniker</h1><p>Manualbaserad hjälp för felsökning och service av din motor.</p></header>
+<header><div class="topbar"><a class="brand" href="./index.html"><span class="mark" aria-hidden="true">✚</span><span>SSRS · HANDBOK & RAKEL</span></a><nav aria-label="Huvudmeny"><a href="./index.html" aria-current="page">Startsida</a><a href="./installera.html">Installation</a></nav></div></header>
+<section class="hero"><div class="hero-inner"><p class="eyebrow">Kunskapsstöd för sjöräddning</p><h1>SSRS Handbok 2025 och RAKEL</h1><p>Ställ frågor mot SSRS Handbok 2025 och om RAKEL. Privat distribution av pluginen planeras.</p></div></section>
 <main>
-<section class="card">
-<h2>Motorer som stöds</h2>
-<div class="models">
-<div class="model"><b>Kawasaki Ultra 300LX</b><span>Jetski · 2013</span></div>
-<div class="model"><b>Yamaha F115</b><span>Utombordare · 2006</span></div>
-</div>
-</section>
-<section class="card">
-<h2>1. Skicka ZIP-filen till ChatGPT</h2>
-<p>Prova knappen nedan på telefonen. Den öppnar telefonens delningsmeny med ZIP-filen, där du kan välja ChatGPT om appen visas.</p>
-<button class="action" id="shareButton" type="button">Dela ZIP till ChatGPT</button>
-<a class="action secondary" href="./B%C3%A5tmekaniker.zip" download>Ladda ner ZIP-filen i stället</a>
-<p class="note" id="shareStatus" aria-live="polite">Delning kräver en kompatibel webbläsare och att ChatGPT kan ta emot filer via delningsmenyn.</p>
-</section>
-<section class="card">
-<h2>2. Installera privat i ChatGPT</h2>
-<a class="action" href="https://chatgpt.com/?q=%40plugin-creator%20Installera%20den%20bifogade%20B%C3%A5tmekaniker.zip%20som%20en%20privat%20plugin%20p%C3%A5%20mitt%20konto.%20Publicera%20den%20inte.">Öppna ChatGPT med instruktionen</a>
-<ol class="steps">
-<li><div><b>Bifoga ZIP-filen</b><small>Om du inte redan delade den via knappen ovan, bifoga filen i chatten.</small></div></li>
-<li><div><b>Skicka installationsinstruktionen</b><small>Be Plugin Creator installera den som en privat plugin på ditt eget konto. Publicera den inte.</small></div></li>
-<li><div><b>Godkänn installationen</b><small>Följ ChatGPTs steg och kontrollera att pluginen finns bland dina egna pluginer.</small></div></li>
-</ol>
-</section>
-<p class="note">Båtmekaniker är ett oberoende hjälpverktyg, inte en officiell Kawasaki- eller Yamaha-tjänst.</p>
+<section class="card"><h2>Två ämnesområden</h2><div class="grid">
+<div class="topic"><h3>SSRS Handbok 2025</h3><p>Frågor som rör innehållet i handboken.</p></div>
+<div class="topic"><h3>RAKEL</h3><p>Frågor om RAKEL.</p></div></div>
+<p class="status">Exakta funktioner, dokument och källhänvisningar kontrolleras när pluginpaketet finns tillgängligt.</p></section>
+<section class="card"><h2>1. Hämta pluginpaketet</h2>
+<div class="notice" role="status"><strong>ZIP-filen saknas än så länge.</strong> Den nya pluginens installationsfil har inte levererats eller verifierats. Därför är delning och nedladdning avstängda.</div>
+<button class="button" type="button" disabled>Dela ZIP till ChatGPT – kommer senare</button>
+<button class="button secondary" type="button" disabled>Ladda ner ZIP – kommer senare</button>
+<p class="status">När den riktiga filen finns kan mobilens delningsmeny användas där det stöds. Det garanterar inte att ChatGPT visas som delningsalternativ eller att pluginen installeras.</p></section>
+<section class="card"><h2>2. Läs innan installation</h2>
+<p>Att öppna ChatGPT eller överföra en ZIP-fil installerar inte automatiskt en plugin. Installationsmetoden ska verifieras när paketet finns.</p>
+<a class="button" href="./installera.html">Läs installationsinformationen</a>
+<a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Öppna ChatGPT</a>
+<p class="status">Avsikten är privat användning, utan publicering i den offentliga plugin-katalogen.</p></section>
 </main>
-<footer class="note">© Båtmekaniker</footer>
-<script>
-const shareButton = document.getElementById("shareButton");
-const shareStatus = document.getElementById("shareStatus");
-shareButton.addEventListener("click", async () => {
-  const zipUrl = new URL("./B%C3%A5tmekaniker.zip", window.location.href);
-  shareButton.disabled = true;
-  shareButton.textContent = "Förbereder ZIP-filen…";
-  try {
-    if (!navigator.share || !navigator.canShare) {
-      shareStatus.textContent = "Fildelning stöds inte i den här webbläsaren. Använd knappen för att ladda ner ZIP-filen och bifoga den i ChatGPT.";
-      return;
-    }
-    const response = await fetch(zipUrl);
-    if (!response.ok) throw new Error("ZIP-filen kunde inte hämtas.");
-    const blob = await response.blob();
-    const file = new File([blob], "Båtmekaniker.zip", {type:"application/zip"});
-    if (!navigator.canShare({files:[file]})) {
-      shareStatus.textContent = "Den här telefonen/webbläsaren kan inte dela ZIP-filer direkt. Ladda ner filen och bifoga den i ChatGPT.";
-      return;
-    }
-    await navigator.share({files:[file], title:"Båtmekaniker.zip", text:"Installera som privat plugin i ChatGPT. Publicera inte."});
-    shareStatus.textContent = "Delningsmenyn öppnades. Välj ChatGPT om appen finns i listan.";
-  } catch (error) {
-    if (error && error.name === "AbortError") {
-      shareStatus.textContent = "Delningen avbröts. Du kan prova igen eller ladda ner ZIP-filen.";
-    } else {
-      shareStatus.textContent = "Kunde inte dela ZIP-filen. Kontrollera att filen finns på hemsidan och prova nedladdningsknappen.";
-    }
-  } finally {
-    shareButton.disabled = false;
-    shareButton.textContent = "Dela ZIP till ChatGPT";
-  }
-});
-</script>
+<footer>SSRS Handbok 2025 och RAKEL · Fristående informationssida med färger inspirerade av Sjöräddningssällskapets webbplats. Ingen officiell anknytning eller godkännande är verifierat.</footer>
 </body></html>
