@@ -27,14 +27,14 @@ a:focus-visible,button:focus-visible{outline:3px solid #2e86c7;outline-offset:3p
 .notice{background:#fff8ec;border:1px solid #e9d0a8;border-left:5px solid #bb7b17;border-radius:9px;padding:14px;color:#674a19}
 .status{color:var(--muted);font-size:14px}
 .steps{padding-left:23px}.steps li{padding:7px 0}
-footer{max-width:780px;width:calc(100% - 32px);margin:0 auto;padding:0 0 28px;color:var(--muted);font-size:13px}
+
 @media(max-width:580px){.topbar{align-items:flex-start;flex-direction:column}.hero{padding:36px 16px 40px}.grid{grid-template-columns:1fr}.card{padding:19px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 /* Sjöräddningsfoto. Bildlagret ligger över sidans bakgrund, under allt innehåll. */
 body{position:relative;isolation:isolate;background:#e9eef0}
 body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(235,242,244,.10) 0%,rgba(235,242,244,.38) 66%,rgba(235,242,244,.63) 100%),url("./ssrs-bakgrund.webp?v=2") center 54%/cover no-repeat;opacity:1}
-header,.hero,main,footer{position:relative;z-index:1}
+header,.hero,main{position:relative;z-index:1}
 .hero{background:linear-gradient(90deg,rgba(18,42,58,.90),rgba(18,42,58,.60)),url("./ssrs-bakgrund.webp?v=2") center 55%/cover no-repeat}
 .card{background:rgba(255,255,255,.93);backdrop-filter:blur(3px)}
 @media(max-width:580px){body::before{background-position:54% center}.hero{background-position:54% center}}
