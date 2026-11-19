@@ -3,27 +3,49 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#123047">
-<title>Båtmekaniker</title>
+<title>Båtmekaniker – ladda ner</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#f4f7f8;color:#183041;font:17px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
-header{background:#123047;color:#fff;text-align:center;padding:52px 20px 58px}header .mark{font-size:38px}h1{font-size:clamp(40px,8vw,60px);line-height:1.05;margin:8px 0}header p{max-width:470px;margin:14px auto 0;color:#d7e5eb;font-size:18px}
-main{width:min(620px,calc(100% - 32px));margin:28px auto 54px}.card{background:#fff;border:1px solid #dce5e9;border-radius:18px;padding:23px;margin:15px 0}h2{font-size:22px;color:#123047;line-height:1.2;margin:0 0 15px}.models{display:grid;grid-template-columns:1fr 1fr;gap:12px}.model{background:#edf3f5;border-radius:13px;padding:16px}.model strong{display:block;color:#123047}.model span{font-size:14px;color:#61717b}
-.button{display:flex;justify-content:center;align-items:center;text-decoration:none;text-align:center;background:#12617a;color:#fff;font-weight:750;padding:16px 18px;border-radius:12px;margin-top:16px}.secondary{background:#e8f1f3;color:#15556a}
-p{color:#596b76;margin:8px 0}.tiny{font-size:13px;text-align:center;color:#77858e;margin-top:22px}
-@media(max-width:500px){header{padding:40px 18px 46px}.card{padding:19px}.models{grid-template-columns:1fr}}
-</style></head>
+*{box-sizing:border-box}body{margin:0;background:#f4f7f8;color:#193141;font:17px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:#123047;color:#fff;text-align:center;padding:42px 20px 46px}header .anchor{font-size:34px}h1{font-size:clamp(38px,8vw,54px);line-height:1.05;margin:7px 0}header p{margin:12px auto 0;max-width:480px;color:#d6e4e9}
+main{max-width:620px;width:calc(100% - 32px);margin:24px auto 48px}.card{background:#fff;border:1px solid #dce5e9;border-radius:18px;padding:22px;margin:15px 0}
+h2{font-size:22px;color:#123047;margin:0 0 13px}.models{display:grid;grid-template-columns:1fr 1fr;gap:10px}.model{background:#edf3f5;border-radius:12px;padding:14px}.model b{display:block;font-size:15px}.model span{font-size:14px;color:#60717b}
+.download{display:flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;background:#12617a;color:white;border-radius:13px;padding:16px 18px;font-weight:800;font-size:17px;margin-top:12px}.download small{display:block;font-size:12px;font-weight:500;opacity:.9}
+.steps{list-style:none;padding:0;margin:0;counter-reset:step}.steps li{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid #e8edef;counter-increment:step}.steps li:last-child{border:0}.steps li:before{content:counter(step);display:grid;place-items:center;width:29px;height:29px;flex:none;border-radius:50%;background:#dceef1;color:#15586c;font-weight:800}.steps b{display:block}.steps small{display:block;color:#61717b;font-size:14px}
+.warning{background:#fff6e5;border:1px solid #efd9a8;color:#674c17;border-radius:12px;padding:14px;font-size:14px}.warning b{display:block;margin-bottom:4px}
+.note{font-size:13px;color:#71808a;text-align:center}a.textlink{color:#12617a}
+footer{text-align:center;color:#78868e;font-size:13px;padding:0 16px 25px}
+@media(max-width:480px){.models{grid-template-columns:1fr}.card{padding:18px}header{padding:36px 18px 40px}}
+</style>
+</head>
 <body>
-<header><div class="mark" aria-hidden="true">⚓</div><h1>Båtmekaniker</h1><p>Få hjälp med felsökning och service – med instruktionsböckerna som grund.</p></header>
+<header><div class="anchor" aria-hidden="true">⚓</div><h1>Båtmekaniker</h1><p>Manualbaserad hjälp för felsökning och service av din motor.</p></header>
 <main>
-<section class="card"><h2>Välj din motor</h2><div class="models">
-<div class="model"><strong>Kawasaki Ultra 300LX</strong><span>Vattenskoter · 2013</span></div>
-<div class="model"><strong>Yamaha F115</strong><span>Utombordare · 2006</span></div>
-</div></section>
-<section class="card"><h2>Kom igång</h2><p>Ladda ner pluginen och följ installationsguiden. Installationen görs i ChatGPT:s datorapp, eller via den publika plugin-katalogen när OpenAI har godkänt publiceringen.</p>
-<a class="button" href="installera.html">Visa installationsguiden</a>
-<a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener">Öppna ChatGPT ↗</a>
+<section class="card">
+<h2>Välj din motor</h2>
+<div class="models">
+<div class="model"><b>Kawasaki Ultra 300LX</b><span>Jetski · 2013</span></div>
+<div class="model"><b>Yamaha F115</b><span>Utombordare · 2006</span></div>
+</div>
 </section>
-<p class="tiny">Båtmekaniker är ett oberoende hjälpverktyg – inte en officiell Kawasaki- eller Yamaha-tjänst.</p>
+<section class="card">
+<h2>1. Ladda ner pluginen</h2>
+<p>Hämta ZIP-paketet till din dator.</p>
+<a class="download" href="./B%C3%A5tmekaniker.zip" download>Ladda ner Båtmekaniker <small>ZIP · innehåller instruktioner och båda manualerna</small></a>
+</section>
+<section class="card">
+<h2>2. Installera i ChatGPT</h2>
+<ol class="steps">
+<li><div><b>Öppna ChatGPT på webben</b><small>Logga in i den arbetsyta där pluginen ska användas.</small></div></li>
+<li><div><b>Öppna Admin console → Plugins</b><small>Välj arbetsytan och klicka på Add.</small></div></li>
+<li><div><b>Välj Upload plugin</b><small>Välj ZIP-filen du laddade ner och följ stegen på skärmen.</small></div></li>
+</ol>
+</section>
+<section class="card">
+<h2>Viktigt om åtkomst</h2>
+<div class="warning"><b>ZIP-filen gör inte pluginen automatiskt tillgänglig för alla.</b>Uppladdning i en arbetsyta kräver att administratören har rätt behörighet. För att vänner med egna, separata ChatGPT-konton ska kunna hitta och installera den behöver pluginen skickas in till OpenAI:s publika katalog, godkännas och publiceras.</div>
+<p class="note">Officiella instruktioner: <a class="textlink" href="https://help.openai.com/en/articles/20001256-plugins-in-chatgpt" target="_blank" rel="noopener">Ladda upp och dela pluginer</a> · <a class="textlink" href="https://developers.openai.com/plugins/deploy/submission" target="_blank" rel="noopener">Publicera i katalogen</a></p>
+</section>
+<p class="note">Båtmekaniker är ett oberoende hjälpverktyg, inte en officiell Kawasaki- eller Yamaha-tjänst.</p>
 </main>
-<footer class="tiny">© Båtmekaniker</footer>
+<footer>© Båtmekaniker</footer>
 </body></html>
