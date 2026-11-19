@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#d71920">
 <meta name="description" content="SSRS Handbok 2025 och RAKEL – information om privat distribution av en ChatGPT-plugin.">
 <title>SSRS Handbok 2025 och RAKEL</title>
-<link rel="stylesheet" href="./styles.css?v=20261119-2">
+<link rel="stylesheet" href="./styles.css?v=20261119-3">
 </head>
 <body>
 <header><div class="topbar"><a class="brand" href="./index.html"><img class="brand-logo" src="./ssrs-logo.svg" alt="Sjöräddningssällskapet" width="230" height="79"></a><nav aria-label="Huvudmeny"><a href="./index.html" aria-current="page">Startsida</a><a href="./installera.html">Installation</a></nav></div></header>
@@ -15,64 +15,37 @@
 <section class="card"><h2>Två ämnesområden</h2><div class="grid">
 <div class="topic"><h3>SSRS Handbok 2025</h3><p>Frågor som rör innehållet i handboken.</p></div>
 <div class="topic"><h3>RAKEL</h3><p>Frågor om RAKEL.</p></div></div>
-<p class="status">Exakta funktioner, dokument och källhänvisningar behöver fortfarande verifieras mot pluginpaketets innehåll.</p></section>
-<section class="card"><h2>1. Skicka ZIP-filen till ChatGPT</h2><p>Prova att dela ZIP-filen direkt från mobilen till ChatGPT. Om ChatGPT inte visas i delningsmenyn, ladda ner filen och bifoga den manuellt.</p>
-<p><strong>Fil:</strong> SSRS Handbok.zip</p>
-<button class="button" id="shareButton" type="button">Dela ZIP till ChatGPT</button>
-<a class="button secondary" href="./SSRS%20Handbok.zip" download="SSRS Handbok.zip">Ladda ner ZIP-filen i stället</a>
-<p class="status" id="shareStatus" aria-live="polite">På kompatibla mobiler öppnas delningsmenyn. ChatGPT kanske inte visas som ett alternativ och filen installeras inte automatiskt.</p></section>
-<section class="card"><h2>2. Installera privat i ChatGPT</h2>
+<p class="status"></p></section>
+<section class="card"><h2>1. Ladda ner ZIP-filen</h2><p>Spara installationsfilen på den enhet där du ska öppna ChatGPT. <strong>Packa inte upp ZIP-filen.</strong></p><p><strong>Fil:</strong> SSRS Handbok.zip</p><a class="button" href="./SSRS%20Handbok.zip" download="SSRS Handbok.zip">Ladda ner SSRS Handbok.zip</a></section>
+<section class="card"><h2>På telefon (iPhone eller Android)</h2>
+<ol class="steps">
+<li><strong>Ladda ner ZIP-filen.</strong> Tryck på nedladdningsknappen ovan. Om filen öppnas i stället för att sparas, använd webbläsarens meny och välj Ladda ner eller Spara i Filer.</li>
+<li><strong>Hitta nedladdningen.</strong> På iPhone: öppna appen <strong>Filer</strong> och titta i <strong>Hämtade filer</strong> under iCloud Drive eller På min iPhone. På Android: öppna <strong>Filer/Mina filer</strong> och titta i <strong>Nedladdningar/Downloads</strong>.</li>
+<li><strong>Öppna ChatGPT.</strong> Gå tillbaka hit och tryck på knappen <strong>Öppna ChatGPT med instruktionen</strong>.</li>
+<li><strong>Bifoga filen.</strong> Tryck på <strong>+</strong> eller bilageikonen vid meddelanderutan i ChatGPT. Välj <strong>Filer</strong> eller <strong>Ladda upp fil</strong>, öppna mappen med nedladdningar och välj <strong>SSRS Handbok.zip</strong>.</li>
+<li><strong>Skicka.</strong> Kontrollera att filen visas som bifogad och skicka installationsinstruktionen. Om texten inte följde med länken kan du kopiera den nedan.</li>
+</ol></section>
+<section class="card"><h2>På dator (Windows eller Mac)</h2>
+<ol class="steps">
+<li><strong>Ladda ner ZIP-filen.</strong> Klicka på nedladdningsknappen ovan. Den hamnar vanligtvis i mappen <strong>Hämtade filer/Downloads</strong>.</li>
+<li><strong>Öppna ChatGPT.</strong> Gå tillbaka hit och klicka på <strong>Öppna ChatGPT med instruktionen</strong>.</li>
+<li><strong>Välj filen.</strong> Klicka på <strong>+</strong> eller bilageikonen vid meddelanderutan i ChatGPT, välj <strong>Ladda upp fil</strong> och bläddra till <strong>Hämtade filer/Downloads</strong>. Välj <strong>SSRS Handbok.zip</strong>.</li>
+<li><strong>Skicka.</strong> När filen syns som bifogad skickar du instruktionen. Om den förifyllda texten saknas, kopiera prompten nedan.</li>
+</ol></section>
+<section class="card"><h2>2. Öppna ChatGPT och bifoga ZIP-filen</h2>
+<p>Efter nedladdningen, använd knappen nedan. ChatGPT öppnas med en färdig fråga. <strong>Du måste själv välja ZIP-filen från telefonens eller datorns nedladdningar.</strong></p>
 <a class="button" href="https://chatgpt.com/?q=Jag%20vill%20installera%20SSRS%20Handbok%202025%20och%20RAKEL%20som%20en%20privat%20plugin.%20Jag%20bifogar%20ZIP-filen.%20Granska%20paketet%20och%20hj%C3%A4lp%20mig%20med%20de%20installationssteg%20som%20faktiskt%20st%C3%B6ds.%20Publicera%20den%20inte." target="_blank" rel="noopener noreferrer">Öppna ChatGPT med instruktionen</a>
+<p class="status">Knappen bifogar inte filen automatiskt. Hitta SSRS Handbok.zip med + eller bilageikonen i ChatGPT.</p>
 <div class="prompt-box" aria-label="Installationsinstruktion att kopiera">
 <p class="prompt-label"><strong>Installationsprompt – kopiera vid behov:</strong></p>
 <blockquote class="prompt-text" id="installationPrompt">“Jag vill installera SSRS Handbok 2025 och RAKEL som en privat plugin. Jag bifogar ZIP-filen. Granska paketet och hjälp mig med de installationssteg som faktiskt stöds. Publicera den inte.”</blockquote>
 <button class="button secondary copy-prompt" type="button" data-copy-prompt aria-label="Kopiera installationsprompten">Kopiera instruktionen</button>
 <p class="status copy-status" aria-live="polite"></p>
 </div>
-<ol class="steps">
-<li><strong>Bifoga ZIP-filen.</strong> Om den inte redan följde med via delningsmenyn, bifoga den i chatten.</li>
-<li><strong>Skicka installationsinstruktionen.</strong> Be om hjälp med privat installation utan offentlig publicering.</li>
-<li><strong>Följ de steg som stöds.</strong> Kontrollera i ChatGPT om pluginen kan installeras för ditt konto och att den fungerar.</li>
-</ol>
-<div class="notice"><strong>Viktigt:</strong> Att dela eller bifoga ZIP-filen installerar inte pluginen automatiskt. Vilken installationsmetod som fungerar beror på ChatGPT-kontot och paketets innehåll och har ännu inte slutverifierats.</div>
-<a class="button secondary" href="./installera.html">Mer detaljerade installationssteg</a></section>
+<p class="status">Att bifoga en ZIP-fil installerar inte pluginen automatiskt. ChatGPT behöver bekräfta om paketet och ditt konto stöder en privat installation.</p>
+<a class="button secondary" href="./installera.html">Visa detaljerade instruktioner</a>
+</section>
 </main>
-<script>
-const shareButton = document.getElementById("shareButton");
-const shareStatus = document.getElementById("shareStatus");
-shareButton.addEventListener("click", async () => {
-  shareButton.disabled = true;
-  shareButton.textContent = "Förbereder ZIP-filen…";
-  try {
-    if (!navigator.share || !navigator.canShare) {
-      shareStatus.textContent = "Din webbläsare stöder inte fildelning. Använd nedladdningsknappen och bifoga ZIP-filen manuellt i ChatGPT.";
-      return;
-    }
-    const response = await fetch("./SSRS%20Handbok.zip");
-    if (!response.ok) throw new Error("Kunde inte hämta ZIP-filen");
-    const blob = await response.blob();
-    const file = new File([blob], "SSRS Handbok.zip", { type: "application/zip" });
-    if (!navigator.canShare({ files: [file] })) {
-      shareStatus.textContent = "Den här enheten kan inte dela ZIP-filer direkt. Ladda ner filen och bifoga den manuellt i ChatGPT.";
-      return;
-    }
-    await navigator.share({
-      files: [file],
-      title: "SSRS Handbok.zip",
-      text: "SSRS Handbok 2025 och RAKEL – hjälp mig att granska paketet och installera privat om det stöds. Publicera det inte."
-    });
-    shareStatus.textContent = "Delningsmenyn har stängts. Kontrollera själv att filen verkligen kom fram till ChatGPT.";
-  } catch (error) {
-    shareStatus.textContent = error && error.name === "AbortError"
-      ? "Delningen avbröts. Försök igen eller ladda ner ZIP-filen."
-      : "Det gick inte att dela ZIP-filen. Prova nedladdningsknappen i stället.";
-  } finally {
-    shareButton.disabled = false;
-    shareButton.textContent = "Dela ZIP till ChatGPT";
-  }
-});
-</script>
-<footer>SSRS Handbok 2025 och RAKEL · Fristående informationssida med färger inspirerade av Sjöräddningssällskapets webbplats. Ingen officiell anknytning eller godkännande är verifierat.</footer>
 <script>
 document.querySelectorAll("[data-copy-prompt]").forEach(button => {
   button.addEventListener("click", async () => {
