@@ -6,8 +6,8 @@ Designen är inspirerad av färgskalan och den tydliga navigationen på [Sjörä
 
 ## Status
 
-- Den nya ZIP-filen har inte levererats.
-- Nedladdning och delningsknappar är avstängda tills rätt fil har verifierats.
+- ZIP-filen `SSRS Handbok.zip` finns i repots rot och är länkad från webbplatsen.
+- Nedladdning är aktiverad; Web Share API försöker dela filen på kompatibla mobiler.
 - Installationsmetoden är ännu inte kontrollerad.
 - Att dela ZIP-filen eller öppna ChatGPT installerar inte automatiskt en plugin.
 - Syftet är privat distribution, inte publik katalogpublicering.
@@ -29,6 +29,6 @@ Designen är inspirerad av färgskalan och den tydliga navigationen på [Sjörä
 
 GitHub Pages gör webbsidan och eventuella publicerade filer åtkomliga för alla som känner till adressen. Det är inte en privat filserver. Kontrollera behörigheter och känslig information innan någon ZIP-fil läggs till.
 
-## När ZIP-filen finns
+## Fortsatt verifiering
 
-Granska paketets innehåll och verkliga filnamn. Aktivera först därefter nedladdning, Web Share API-delning och lämpliga installationsinstruktioner. Verifiera flödet på riktiga enheter. Ingen installationslänk eller specifik pluginfunktion ska antas fungera utan test.
+Granska paketets innehåll och verifiera installationsmetoden i ChatGPT. Testa nedladdning och Web Share API-delning på riktiga enheter. Ingen installationslänk eller specifik pluginfunktion ska antas fungera utan test. Filen publiceras via GitHub Pages och är därmed åtkomlig för andra; kontrollera att innehållet får distribueras.
