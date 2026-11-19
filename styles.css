@@ -41,3 +41,10 @@ header,.hero,main,footer{position:relative;z-index:1}
 .brand-logo{display:block;width:clamp(160px,23vw,230px);height:auto;object-fit:contain}
 @media(max-width:580px){.brand-logo{width:190px}}
 
+
+/* Kopierbar installationsprompt, identisk på båda sidor. */
+.prompt-box{margin:16px 0;padding:16px;background:#f5f7f8;border:1px solid #cbd8df;border-radius:10px}
+.prompt-label{margin:0 0 9px}
+.prompt-text{margin:0;padding:13px 15px;white-space:normal;overflow-wrap:anywhere;background:white;border-left:4px solid var(--red);border-radius:6px;font-size:15px;line-height:1.65;color:var(--navy);user-select:text}
+.copy-prompt{margin-top:12px}
+.copy-status{min-height:1.4em;margin:9px 0 0}
