@@ -40,3 +40,8 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 /* SSRS logo in header */
 .brand-logo{display:block;width:clamp(160px,23vw,230px);height:auto;object-fit:contain}
 @media(max-width:580px){.brand-logo{width:190px}}
+
+/* Keep the photographic backdrop above the body paint but behind content. */
+body::before{z-index:0;opacity:.78}
+header,.hero,main,footer{position:relative;z-index:1}
+.card{background:rgba(255,255,255,.94)}
