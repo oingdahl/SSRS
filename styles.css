@@ -55,3 +55,8 @@ header,.hero,main{position:relative;z-index:1}
 .device-tip{background:rgba(245,247,248,.95);border:1px solid var(--line);border-radius:9px;padding:15px}
 .device-tip p{color:var(--muted);font-size:14px;margin:5px 0 0}
 @media(max-width:580px){.device-grid{grid-template-columns:1fr}}
+
+/* Stationsnamn intill SSRS-loggan, med matchande kraftig sans-serif. */
+.brand{gap:14px;flex-wrap:nowrap}
+.station-name{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-stretch:condensed;font-weight:900;font-size:clamp(18px,2.6vw,27px);line-height:1;letter-spacing:-.03em;color:var(--navy);white-space:nowrap}
+@media(max-width:580px){.brand{gap:9px}.brand-logo{width:150px}.station-name{font-size:20px}}
