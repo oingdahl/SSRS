@@ -1,44 +1,53 @@
 <!doctype html>
 <html lang="sv">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#10283f">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123047">
 <title>Båtmekaniker</title>
 <style>
-:root{--navy:#10283f;--blue:#176b87;--ink:#172b3a;--muted:#637480;--bg:#f4f7f8;--line:#dce5e9}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
-header{background:var(--navy);color:white;padding:48px 20px 62px;text-align:center}
-.anchor{font-size:32px}h1{font-size:clamp(2.4rem,9vw,4rem);line-height:1.02;margin:10px 0}header p{margin:12px auto 0;max-width:440px;color:#d8e5eb;font-size:1.05rem}
-main{width:min(680px,calc(100% - 32px));margin:-25px auto 52px}
-.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:14px;box-shadow:0 7px 24px #10283f08}
-h2{font-size:1.2rem;color:var(--navy);margin:0 0 14px}
-.models{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.model{background:#f3f7f8;border-radius:13px;padding:17px 14px}
-.model .ico{font-size:24px}.model strong{display:block;margin-top:7px;color:var(--navy);font-size:1rem}.model small{color:var(--muted)}
-.primary{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;border-radius:13px;background:var(--blue);color:white;text-decoration:none;font-weight:750;font-size:1.05rem;margin-top:16px}
-.secondary{display:block;text-align:center;color:var(--blue);font-weight:700;text-decoration:none;margin-top:14px}
-.steps{display:grid;gap:13px}.step{display:flex;gap:13px;align-items:flex-start}.num{flex:0 0 31px;height:31px;border-radius:50%;background:#e5f1f4;color:var(--blue);display:grid;place-items:center;font-weight:800}.step strong{display:block;color:var(--navy)}.step p{margin:2px 0 0;color:var(--muted);font-size:.93rem}
-.note{background:#fff8e9;border:1px solid #f0dfb8;border-radius:13px;padding:14px;color:#67501f;font-size:.9rem}
-footer{text-align:center;color:var(--muted);font-size:.82rem;padding:0 18px 30px}
-@media(max-width:480px){header{padding:39px 18px 53px}.panel{padding:18px}.models{grid-template-columns:1fr}.model{display:flex;align-items:center;gap:12px}.model .ico{font-size:28px}.model strong{margin:0}.model small{display:block}}
+*{box-sizing:border-box}body{margin:0;background:#f5f7f8;color:#182d3b;font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:#123047;color:#fff;padding:48px 22px 54px;text-align:center}
+header .icon{font-size:38px}h1{font-size:clamp(38px,8vw,58px);line-height:1.05;margin:8px 0}header p{max-width:480px;margin:14px auto 0;color:#d7e4ea;font-size:18px}
+main{width:min(620px,calc(100% - 32px));margin:28px auto 56px}
+.card{background:#fff;border:1px solid #dce5e9;border-radius:18px;padding:24px;margin:16px 0}
+h2{font-size:22px;line-height:1.2;margin:0 0 14px;color:#123047}p{margin:8px 0;color:#536572}
+.models{display:grid;grid-template-columns:1fr 1fr;gap:12px}.model{background:#edf3f5;border-radius:13px;padding:16px}.model strong{display:block;color:#123047;font-size:16px}.model span{color:#5a6b76;font-size:14px}
+.steps{padding:0;list-style:none;counter-reset:s;margin:0}.steps li{counter-increment:s;display:flex;gap:13px;padding:12px 0;border-bottom:1px solid #e7edef}.steps li:last-child{border:0}.steps li:before{content:counter(s);background:#dceef1;color:#13566b;font-weight:800;border-radius:50%;width:30px;height:30px;flex:none;display:grid;place-items:center}
+.steps strong{display:block;color:#203747}.steps small{display:block;color:#5b6d78;font-size:14px}
+.button{display:flex;justify-content:center;align-items:center;text-align:center;background:#12617a;color:#fff;text-decoration:none;padding:15px 20px;border-radius:12px;font-weight:750;margin-top:16px}
+.status{background:#fff7e7;border:1px solid #f0d9a8;border-radius:13px;padding:15px;color:#654c1c;font-size:15px}
+.note{font-size:14px;color:#6a7881}footer{text-align:center;padding:0 18px 28px;color:#77858e;font-size:13px}
+@media(max-width:500px){header{padding:38px 20px 42px}.card{padding:19px}.models{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header><div class="anchor" aria-hidden="true">⚓</div><h1>Båtmekaniker</h1><p>Din digitala hjälp med motorfrågor – med instruktionsböckerna som grund.</p></header>
+<header><div class="icon" aria-hidden="true">⚓</div><h1>Båtmekaniker</h1><p>Få hjälp med felsökning och service – med instruktionsböckerna som grund.</p></header>
 <main>
-<section class="panel"><h2>Välj din motor</h2><div class="models">
-<div class="model"><span class="ico" aria-hidden="true">🌊</span><div><strong>Kawasaki Ultra 300LX</strong><small>Jetski · 2013</small></div></div>
-<div class="model"><span class="ico" aria-hidden="true">🚤</span><div><strong>Yamaha F115</strong><small>Utombordare · 2006</small></div></div>
-</div></section>
-<section class="panel"><h2>Installera Båtmekaniker</h2>
-<div class="note"><strong>Viktigt:</strong> Pluginen kan inte installeras automatiskt genom att bara öppna en webbsida. Installationen beror på vilken ChatGPT-miljö du använder.</div>
-<a class="primary" href="installera.html">Visa hur du installerar <span aria-hidden="true">→</span></a>
+<section class="card">
+<h2>Vilken motor gäller det?</h2>
+<div class="models">
+<div class="model"><strong>Kawasaki Ultra 300LX</strong><span>Jetski · 2013</span></div>
+<div class="model"><strong>Yamaha F115</strong><span>Utombordare · 2006</span></div>
+</div>
 </section>
-<section class="panel"><h2>Så använder du den</h2><div class="steps">
-<div class="step"><span class="num">1</span><div><strong>Öppna Båtmekaniker i ChatGPT</strong><p>Starta en ny konversation med pluginen.</p></div></div>
-<div class="step"><span class="num">2</span><div><strong>Skriv vad du undrar</strong><p>Beskriv motorn och problemet.</p></div></div>
-<div class="step"><span class="num">3</span><div><strong>Få svar med manualstöd</strong><p>Be om tydliga instruktioner och sidhänvisningar.</p></div></div>
-</div></section>
+<section class="card">
+<h2>Installera Båtmekaniker</h2>
+<ol class="steps">
+<li><div><strong>Öppna ChatGPT</strong><small>Logga in på ditt konto.</small></div></li>
+<li><div><strong>Öppna Plugins</strong><small>Gå till Plugins och välj katalogen.</small></div></li>
+<li><div><strong>Sök efter Båtmekaniker</strong><small>När den finns publicerad väljer du pluginen och trycker Installera.</small></div></li>
+<li><div><strong>Starta en chatt</strong><small>Välj Båtmekaniker via + eller @ om det alternativet visas, och skriv din fråga.</small></div></li>
+</ol>
+</section>
+<section class="card">
+<h2>Kan jag installera den redan nu?</h2>
+<div class="status"><strong>Inte ännu – pluginen är fortfarande privat.</strong><br>Den kan därför inte installeras av vänner via en vanlig webblänk. För att alla ska kunna installera den behöver pluginpaketet skickas till OpenAI för granskning och publiceras i den publika plugin-katalogen.</div>
+<p class="note">En ZIP-fil är ett pluginpaket, men det räcker inte att lägga den på en vanlig webbplats: ChatGPT behöver att pluginen delas i arbetsytan eller publiceras i katalogen innan andra kan installera den.</p>
+<a class="button" href="https://developers.openai.com/plugins/deploy/submission" target="_blank" rel="noopener">Så publicerar ägaren pluginen hos OpenAI ↗</a>
+</section>
+<p class="note" style="text-align:center">Båtmekaniker är ett oberoende hjälpverktyg och inte en officiell Kawasaki- eller Yamaha-tjänst.</p>
 </main>
-<footer>© Båtmekaniker · Oberoende hjälpreda, inte en officiell Kawasaki- eller Yamaha-tjänst.</footer>
-</body></html>
+<footer>© Båtmekaniker</footer>
+</body>
+</html>
